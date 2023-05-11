@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FISHING GAME</title>
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <header>
+        <h1>FISHING GAME</h1>
+    </header>
+    <main>
+        <div class="luer-uki">
+            <img src="img/釣りアイコン (2).jpeg" alt="">
+            <h2 class="nani">何を使いますか？</h2>
+            <img src="img/ルアーアイコン1 (3).jpeg" alt="">
+        </div>
+        <ul>
+            <li id="esa">エサ？</li>
+            <li id="lure">ルアー？</li>
+        </ul>
+
+        <div class="itosaki">
+            <div id="turiage">何が釣れたか？</div>
+            <div id="chouka">釣果は？</div>
+        </div>
+
+
+        <div></div>
+        <div></div>
+    </main>
+    <div></div>
+    <div></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $("#esa").on("click", function () {
+            const min = 0;
+            const max = 100;
+            const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            console.log(randomNumber)
+            if (randomNumber === 0) {
+                $("#turiage").html('<img src="img3/okane1.jpeg" alt="">');
+                $("#chouka").text("マジ！！！");
+            } else if (1 <= randomNumber && randomNumber <= 5) {
+                $("#turiage").html('<img src="img2/maguro1.jpeg" alt="">');
+                $("#chouka").text("大漁！！！");
+            } else if (6 <= randomNumber && randomNumber <= 15) {
+                $("#turiage").html('<img src="img2/tai1.jpeg" alt="">');
+                $("#chouka").text("やったー！！！");
+            } else if (16 <= randomNumber && randomNumber <= 40) {
+                $("#turiage").html('<img src="img2/sakana1.jpeg" alt="">');
+                $("#chouka").text("やばい・・・");
+            } else {
+                $("#turiage").html('<img src="img2/sakana2.jpeg" alt="">');
+                $("#chouka").text("逃げろー！！！！！");
+            }
+
+
+
+
+
+
+        });
+        $("#lure").on("click", function () {
+            const min = 0;
+            const max = 100;
+            const randomNumber = Math.floor(Math.random() * (max - min + 1)) + min;
+            console.log(randomNumber)
+            if (randomNumber === 0) {
+                $("#turiage").html('<img src="img3/okane1.jpeg" alt="">');
+                $("#chouka").text("マジ！！！");
+            } else if (1 <= randomNumber && randomNumber <= 10) {
+                $("#turiage").html('<img src="img2/maguro1.jpeg" alt="">');
+                $("#chouka").text("大漁！！！");
+            } else if (11 <= randomNumber && randomNumber <= 30) {
+                $("#turiage").html('<img src="img2/tai1.jpeg" alt="">');
+                $("#chouka").text("やったー！！！");
+            } else if (31 <= randomNumber && randomNumber <= 60) {
+                $("#turiage").html('<img src="img2/sakana1.jpeg" alt="">');
+                $("#chouka").text("やばい・・・");
+            } else if (61 <= randomNumber && randomNumber <= 90) {
+                $("#turiage").html('<img src="img2/sakana2.jpeg" alt="">');
+                $("#chouka").text("逃げろー！！！！！");
+            } else {
+                $("#turiage").html('<img src="img3/satu1.jpeg" alt="">');
+                $("#chouka").text("お金だ💛");
+            }
+        });
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,77 @@
+header {
+    font-size: 40px;
+    color: deeppink;
+    text-align: center;
+}
+
+.nani {
+    text-align: center;
+    font-size: 35px;
+    color: midnightblue;
+}
+
+.luer-uki {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    color: deeppink;
+    font-size: 50px;
+}
+
+li {
+
+
+    text-align: center;
+    list-style-type: none;
+
+    border-radius: 50%;
+    background-color: #FFF;
+    display: table-cell;
+    /* 定義 */
+    cursor: pointer;
+}
+
+li:hover {
+    background: #ef109e;
+    color: #fff;
+
+
+}
+
+.itosaki {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 50px;
+    color: #ef109e;
+}
+
+
+.itosaki1 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itosaki1 img {
+    width: 180%;
+    height: 150px;
+}
+
+.itosaki1 img div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itosaki2 {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
